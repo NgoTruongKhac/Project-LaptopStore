@@ -19,7 +19,7 @@
 					<input class="form-control me-2 " type="search"
 						placeholder="Tìm kiếm" aria-label="Search">
 				</div>
-				<button class="ms-2 btn btn-success " style="font-size: 13px;"
+				<button class="ms-2 btn btn-outline-primary" style="font-size: 13px;"
 					type="submit">Tìm kiếm</button>
 			</form>
 
@@ -55,7 +55,7 @@
 
 			<c:if test="${empty User}">
 				<button data-bs-toggle="modal" data-bs-target="#login" type="button"
-					class="btn btn-primary d-flex align-items-center" style="height: 45px">
+					class="btn btn-outline-primary d-flex align-items-center" style="height: 45px">
 					<i class="bi bi-person"></i> Đăng Nhập
 				</button>
 				<%@include file="login.jsp"%>
@@ -63,7 +63,7 @@
 
 			<button data-bs-toggle="modal" data-bs-target="#register"
 				type="button" type="button"
-				class="btn btn-primary d-flex align-items-center" style="height: 45px">
+				class="btn btn-outline-primary d-flex align-items-center" style="height: 45px">
 				<i class="bi bi-person-plus me-1"></i> Đăng ký
 			</button>
 			<%@include file="register.jsp"%>
@@ -126,8 +126,8 @@
 	</div>
 </nav>
 
-<c:set var="type" value="${requestScope.type}" />
-<c:set var="error" value="${requestScope.error}" />
+<c:set var="type" value="${sessionScope.type}" />
+<c:set var="error" value="${sessionScope.error}" />
 
 <c:if test="${type == 'error'}">
 	<c:if test="${error=='login'}">

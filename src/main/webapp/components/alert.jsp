@@ -3,23 +3,21 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-
-<c:if
-    test="${not empty requestScope.message and not empty requestScope.type}">
-
+<c:if test="${not empty sessionScope.message and not empty sessionScope.type}">
     <script type="text/javascript">
         const notyf = new Notyf();
         notyf.open({
-            type : "${requestScope.type}",
-            message : "${requestScope.message}",
+            type : "${sessionScope.type}",
+            message : "${sessionScope.message}",
             position : {
                 x : "center",
                 y : "center",
             },
-            duration : "${requestScope.type}" === "error" ? null : 2500,
+            duration : "${sessionScope.type}" === "error" ? null : 2500,
             dismissible : true
         });
     </script>
-    <c:remove var="message" scope="request" />
-    <c:remove var="type" scope="request" />
+    <!-- Xóa thông báo khỏi session sau khi hiển thị -->
+    <c:remove var="message" scope="session" />
+    <c:remove var="type" scope="session" />
 </c:if>
