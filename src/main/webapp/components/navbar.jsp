@@ -31,7 +31,7 @@
 
 				<div class="dropdown">
 					<button id="accountIcon" type="button"
-						class="d-flex align-items-center btn btn-primary dropdown-toggle"
+						class="d-flex align-items-center btn btn-outline-primary dropdown-toggle"
 						data-bs-toggle="dropdown" aria-expanded="false" style="height: 45px">
 						<i class="bi bi-person"></i> ${User.firstName}
 					</button>

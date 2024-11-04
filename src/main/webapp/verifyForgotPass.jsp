@@ -12,7 +12,7 @@
 	<div class="d-flex justify-content-center mt-5">
 		<div class="bg-info-subtle rounded-2"
 			style="width: 270px; height: 320px; padding: 30px; border: solid; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-			<form action="verifyCode" method="post">
+			<form action="verifyForgotPass" method="post">
 				<div class="text-body-tertiary mb-2 text-center">
 					<i> mã xác nhận đã gửi về email của bạn</i>
 				</div>
