@@ -27,7 +27,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 
-
-<link rel="stylesheet" href="components/style.css">
 <link rel="stylesheet" href="components/font.css">
+
+<link rel="stylesheet" href="components/styleNavbar.css">
+
 
