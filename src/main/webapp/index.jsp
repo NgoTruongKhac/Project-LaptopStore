@@ -14,7 +14,9 @@ response.setDateHeader("Expires", 0); // Proxies.
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laptop Store</title>
 
-<%@ include file="components/allCss.jsp"%>
+<%@ include file="styleCSS/allCss.jsp"%>
+
+
 
 
 </head>

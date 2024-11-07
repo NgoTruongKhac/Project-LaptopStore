@@ -137,7 +137,7 @@
 <c:if test="${type == 'error'}">
 	<c:if test="${error=='login'}">
 		<script type="text/javascript">
-			// Đảm bảo trang đã tải xong trước khi mở modal
+			
 			document.addEventListener("DOMContentLoaded", function() {
 				new bootstrap.Modal(document.getElementById('login')).show();
 			});
@@ -145,7 +145,7 @@
 	</c:if>
 	<c:if test="${error=='register'}">
 		<script type="text/javascript">
-			// Đảm bảo trang đã tải xong trước khi mở modal
+		
 			document
 					.addEventListener("DOMContentLoaded",
 							function() {
