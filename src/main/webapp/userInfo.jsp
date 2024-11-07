@@ -16,7 +16,7 @@ response.setDateHeader("Expires", 0); // Proxies.
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>User Information</title>
-<link rel="stylesheet" href="components/avatar.css">
+<link rel="stylesheet" href="styleCSS/avatar.css">
 
 <%@ include file="styleCSS/allCss.jsp"%>
 
