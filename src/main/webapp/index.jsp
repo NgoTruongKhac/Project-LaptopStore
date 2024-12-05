@@ -25,6 +25,8 @@ response.setDateHeader("Expires", 0); // Proxies.
 	<jsp:include page="components/navbar.jsp"></jsp:include>
 
 	<jsp:include page="components/alert.jsp"></jsp:include>
+	
+	<script type="text/javascript" src="javaScript/addressVietNamAPI.js"></script>
 
 </body>
 
