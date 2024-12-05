@@ -17,7 +17,7 @@ public class RegisterServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
- 
+
 		try {
 
 			String firstName = req.getParameter("firstName");
@@ -68,12 +68,12 @@ public class RegisterServlet extends HttpServlet {
 					
 					SmsUtil.sendSms(emailOrPhone, verificationSMS);
 
-					req.getSession().setAttribute("verificationTime", System.currentTimeMillis());
-					req.getSession().setAttribute("verificationSMS", verificationSMS);
-					req.getSession().setAttribute("firstName", firstName);
-					req.getSession().setAttribute("lastName", lastName);
-					req.getSession().setAttribute("phoneNumber", emailOrPhone);
-					req.getSession().setAttribute("pass", pass);
+					req.setAttribute("verificationTime", System.currentTimeMillis());
+					req.setAttribute("verificationSMS", verificationSMS);
+					req.setAttribute("firstName", firstName);
+					req.setAttribute("lastName", lastName);
+					req.setAttribute("phoneNumber", emailOrPhone);
+					req.setAttribute("pass", pass);
 
 					req.getRequestDispatcher("verifyOTP.jsp").forward(req, resp);
 

@@ -29,6 +29,8 @@
 
 		</div>
 		<div class="col-md-3 d-flex justify-content-evenly">
+		
+		
 
 
 			<c:if test="${not empty User}">
