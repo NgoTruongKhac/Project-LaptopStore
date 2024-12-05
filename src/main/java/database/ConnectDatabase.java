@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class ConnectDatabase {
-	private static final String DB_URL="jdbc:sqlserver://LAPTOP-INSKLJFB:1433;databaseName=LaptopStore;encrypt=false";
+	private static final String DB_URL="jdbc:sqlserver://MSI:1433;databaseName=LaptopStore;encrypt=false";
 	private static final String USER="sa";
 	private static final String PASS="123";
 	

@@ -5,7 +5,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 
-
+ 
 <div class="sticky-top bg-white shadow-sm">
 
 	<div class="container mt-2 mb-1">
